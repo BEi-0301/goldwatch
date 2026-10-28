@@ -6,6 +6,6 @@
                          ],
     "release_notes":  "1. 更新源迁到 GitHub：update.json 走 jsDelivr，安装包走 gh-proxy / raw 多源重试\n2. 检查更新失败时会依次重试备用源，并给出每个源的具体错误\n3. 窗口可缩窄成长条，列表与搜索栏随宽度自适应\n4. 概览卡片支持长按编辑，设置窗不再比主窗更大",
     "mandatory":  false,
-    "size":  2593141,
-    "sha256":  "8a2c3b0834fb85193ed067bb9a68bcab5937eafc178d616db8bdd2ca3fc5244e"
+    "size":  2593214,
+    "sha256":  "a3006e28f04e97c8716c79d91dfa93cfb82d25b7bc09b9444d8dca97c96ab65b"
 }
