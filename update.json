@@ -1,8 +1,11 @@
 {
     "version":  "2.3.2",
-    "download_url":  "https://cdn.jsdelivr.net/gh/BEi-0301/goldwatch@main/release/GoldWatch_Setup_v2.3.2.exe",
-    "release_notes":  "1. 更新源迁到 GitHub：主源走 jsDelivr CDN（国内可直连），另带两个备用镜像\n2. 检查更新失败时会依次重试备用源，并给出每个源的具体错误\n3. 窗口可缩窄成长条，列表与搜索栏随宽度自适应\n4. 概览卡片支持长按编辑，设置窗不再比主窗更大",
+    "download_url":  "https://gh-proxy.com/https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe",
+    "download_mirrors":  [
+                             "https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe"
+                         ],
+    "release_notes":  "1. 更新源迁到 GitHub：update.json 走 jsDelivr，安装包走 gh-proxy / raw 多源重试\n2. 检查更新失败时会依次重试备用源，并给出每个源的具体错误\n3. 窗口可缩窄成长条，列表与搜索栏随宽度自适应\n4. 概览卡片支持长按编辑，设置窗不再比主窗更大",
     "mandatory":  false,
-    "size":  2592739,
-    "sha256":  "167ea846b08c03b2a829342ee602f826a827716b069a7ed204d7f141c61ece57"
+    "size":  2593141,
+    "sha256":  "8a2c3b0834fb85193ed067bb9a68bcab5937eafc178d616db8bdd2ca3fc5244e"
 }
