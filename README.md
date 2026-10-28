@@ -51,13 +51,20 @@
 ```json
 {
   "version": "2.3.2",
-  "download_url": "https://cdn.jsdelivr.net/gh/<owner>/goldwatch@main/release/黄金盯盘_v2.3.2.exe",
+  "download_url": "https://gh-proxy.com/https://raw.githubusercontent.com/<owner>/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe",
+  "download_mirrors": [
+    "https://raw.githubusercontent.com/<owner>/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe"
+  ],
   "release_notes": "本次更新内容，客户端弹窗里按行显示",
   "mandatory": false,
-  "size": 2592082,
+  "size": 2592739,
   "sha256": "安装包的 SHA256"
 }
 ```
+
+> **为什么安装包不走 jsDelivr**：jsDelivr 对 `.exe` 一律返回 403（实测 README 和 JSON 正常），
+> 所以 `update.json` 走 jsDelivr，安装包走 `gh-proxy` + `raw` 多源重试；
+> 客户端会按 `download_url` → `download_mirrors` 的顺序逐个尝试，全部失败才报错。
 
 发布新版本只需三步：
 
