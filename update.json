@@ -1,11 +1,11 @@
 {
-    "version":  "2.3.2",
-    "download_url":  "https://gh-proxy.com/https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe",
+    "version":  "2.3.3",
+    "download_url":  "https://gh-proxy.com/https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.3.exe",
     "download_mirrors":  [
-                             "https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.2.exe"
+                             "https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.3.exe"
                          ],
-    "release_notes":  "1. 更新源迁到 GitHub：update.json 走 jsDelivr，安装包走 gh-proxy / raw 多源重试\n2. 检查更新失败时会依次重试备用源，并给出每个源的具体错误\n3. 窗口可缩窄成长条，列表与搜索栏随宽度自适应\n4. 概览卡片支持长按编辑，设置窗不再比主窗更大",
+    "release_notes":  "1. 修复开机自启：程序换过目录、或旧副本被删后，开机不再弹「Windows Script Host 找不到脚本」\n2. 每次启动都会按当前安装目录重写启动项快捷方式，装在哪都能正确自启\n3. 更新源仍为 gh-proxy 主源 + raw/jsDelivr 备用，安装包走多源重试并校验 sha256",
     "mandatory":  false,
-    "size":  2593214,
-    "sha256":  "a3006e28f04e97c8716c79d91dfa93cfb82d25b7bc09b9444d8dca97c96ab65b"
+    "size":  2593537,
+    "sha256":  "879de50b092fd7bbeeabc50dee610439b548742097ee03af4d8ba26a8aa5852c"
 }
