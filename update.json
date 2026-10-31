@@ -1,11 +1,11 @@
 {
-    "version":  "2.3.3",
-    "download_url":  "https://gh-proxy.com/https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.3.exe",
+    "version":  "2.3.4",
+    "download_url":  "https://gh-proxy.com/https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.4.exe",
     "download_mirrors":  [
-                             "https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.3.exe"
+                             "https://raw.githubusercontent.com/BEi-0301/goldwatch/main/release/GoldWatch_Setup_v2.3.4.exe"
                          ],
-    "release_notes":  "1. 修复开机自启：程序换过目录、或旧副本被删后，开机不再弹「Windows Script Host 找不到脚本」\n2. 每次启动都会按当前安装目录重写启动项快捷方式，装在哪都能正确自启\n3. 更新源仍为 gh-proxy 主源 + raw/jsDelivr 备用，安装包走多源重试并校验 sha256",
+    "release_notes":  "1. 检查更新改为「多源取最高版本」：CDN 缓存旧文件时也不会漏掉新版本\n2. 修复开机自启：启动项始终指向当前安装目录，不再弹「找不到脚本」\n3. 安装包走 gh-proxy / raw 多源重试，下载后校验 sha256",
     "mandatory":  false,
-    "size":  2593537,
-    "sha256":  "879de50b092fd7bbeeabc50dee610439b548742097ee03af4d8ba26a8aa5852c"
+    "size":  2594030,
+    "sha256":  "14edc9f7c78458f690fa0c76bb52a6d3732681da7896d38660c3ab817b5f49c9"
 }
